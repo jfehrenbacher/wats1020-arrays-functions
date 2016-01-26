@@ -16,8 +16,12 @@
 // This portion of the script is meant to call and display the result of your Function.
 // You do not need to change the following lines, but you may change them if you 
 // are experimenting further or pursuing stretch goals.
-var originalText = "There are two hard things in Computer Science: Cach invalidation, naming things, and off-by-one errors.";
-var wordLimit = 8;
-var shortText = truncateWords(originalText, wordLimit);
-console.log('originalText: ' + originalText);
-console.log('shortText: ' + shortText);
+var truncateWords = function(numWords) {
+var longText = '';
+var longTextArray = longText.split('You feel your whiteness properly at the American border. Most of the time being white is an absence of problems. The police don’t bother you so you don’t notice the police not bothering you. You get the job so you don’t notice not getting it. Your children are not confused with criminals.');
+console.log(longTextArray.length);
+var shortText = longTextArray.splice(0,12);
+shortText.push('...');
+var newshortText = shortText.join(' ');
+console.log('newshortText: ' + newshortText);
+};
