@@ -17,8 +17,8 @@
 // You do not need to change the following lines, but you may change them if you 
 // are experimenting further or pursuing stretch goals.
 var truncateWords = function(numWords) {
-var longText = '';
-var longTextArray = longText.split('You feel your whiteness properly at the American border. Most of the time being white is an absence of problems. The police don’t bother you so you don’t notice the police not bothering you. You get the job so you don’t notice not getting it. Your children are not confused with criminals.');
+var longText = 'You feel your whiteness properly at the American border. Most of the time being white is an absence of problems. The police don’t bother you so you don’t notice the police not bothering you. You get the job so you don’t notice not getting it. Your children are not confused with criminals.';
+var longTextArray = longText.split(' ');
 console.log(longTextArray.length);
 var shortText = longTextArray.splice(0,12);
 shortText.push('...');
